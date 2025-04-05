@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaLuxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">CASALUXE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#blog">Blog Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+      
+    <!-- <img src="images/dekorasikanan.png" alt="Dekorasi Kanan" class="dekorasi-kanan"> -->
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Transform Your Home with Elegance & Luxury</h1>
+        <p class="subtitle">Kami menghadirkan furnitur dan dekorasi premium untuk menciptakan ruang yang nyaman dan penuh gaya. Jelajahi koleksi eksklusif kami dan temukan keindahan dalam setiap detail.</p>
+        <a href="#" class="btn">Get Started</a>
+        <div class="image-container">
+            <img src="images/sofa.png" alt="Sofa Elegan">
+        </div>
+        <p class="quote">"Sebuah rumah adalah cerminan dari jiwamu. Jadikan setiap sudutnya istimewa."</p>
+        <p class="brand">CasaLuxe Group</p>
+    </section>
+
+    <!-- Living Space Section -->
+    <section class="living-space-section">
+        <div class="living-space-text">
+            <h2>Elevate Your Living Space</h2>
+            <p>CasaLuxe menghadirkan koleksi furnitur dan dekorasi dengan desain modern dan material berkualitas tinggi. Kami mengutamakan keindahan, kenyamanan, dan fungsionalitas dalam setiap produk kami.</p>
+            <p><span class="dot"></span> CasaLuxe</p>
+        </div>
+        <div class="living-space-images">
+            <img src="https://www.99.co/id/panduan/wp-content/uploads/2023/07/26132341/Desain-Ruang-Tamu-Minimalis-Elegan.jpg" alt="Interior 1">
+            <img src="https://imgvz.vsszan.com/forum/202104/07/160241u1sso2hz.jpg" alt="Interior 2">
+            <img src="https://th.bing.com/th/id/R.27d2142ce3df15e5ed96b5e731127e31?rik=v3Fre%2bDRMzGE3w&riu=http%3a%2f%2fimgwcs3.soufunimg.com%2fnews%2f2022_04%2f21%2f4e507bf1-d99d-401a-bb45-6f5f4aeaf8c3.jpg&ehk=LIjv6yrcYQlDL3nX8BnvLj4SpSzahNEWKxQ16NUvt%2bI%3d&risl=&pid=ImgRaw&r=0" alt="Interior 3">
+        </div>
+    </section>
+
+    <section id="shop" class="featured-products">
+        <h2>Featured Products</h2>
+        <p>Our Best Value Products</p>
+        <div class="product-container">
+            <div class="product-card" onclick="toggleFlip(0)">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="images/classic-chair.png" id="img-0" alt="Elegant Classic Chair">
+                        <h3>Elegant Classic Chair</h3>
+                        <p class="price">$50.00</p>
+                        <div class="color-options">
+                            <span class="color" style="background: #c9b7a8;" onclick="changeColor(event, 0, 'images/classic-chair-1.png')"></span>
+                            <span class="color" style="background: #8b5e3b;" onclick="changeColor(event, 0, 'images/classic-chair.png')"></span>
+                        </div>
+                    </div>
+                    <div class="product-back">
+                        <p>A classic wooden chair with elegant details.</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-card" onclick="toggleFlip(1)">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="images/pink-velvet-chair.png" id="img-1" alt="Luxurious Pink Velvet Chair">
+                        <h3>Luxurious Pink Velvet Chair</h3>
+                        <p class="price">$60.00</p>
+                        <div class="color-options">
+                            <span class="color" style="background: #e5a0b0;" onclick="changeColor(event, 1, 'images/pink-velvet-chair.png')"></span>
+                            <span class="color" style="background: #d8c2ac;" onclick="changeColor(event, 1, 'images/pink-velvet-chair-2.png')"></span>
+                        </div>
+                    </div>
+                    <div class="product-back">
+                        <p>A soft, luxurious velvet chair for modern interiors.</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-card" onclick="toggleFlip(2)">
+                <div class="product-inner">
+                    <div class="product-front">
+                        <img src="images/office-chair.png" id="img-2" alt="Cozy Tufted Office Chair">
+                        <h3>Cozy Tufted Office Chair</h3>
+                        <p class="price">$40.00</p>
+                        <div class="color-options">
+                            <span class="color" style="background: #d3cfcf;" onclick="changeColor(event, 2, 'images/office-chair.png')"></span>
+                            <span class="color" style="background: #6d6d6d;" onclick="changeColor(event, 2, 'images/office-chair-2.png')"></span>
+                        </div>
+                    </div>
+                    <div class="product-back">
+                        <p>A comfortable office chair with tufted design.</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog us -->
+    <section id="blog" class="promo-section">
+        <div class="promo-container">
+            <div class="promo-image-wrapper">
+                <div class="promo-image">
+                    <img src="https://www.artwood.se/wp-content/uploads/2021/03/natural-living-kopia-768x532.jpg" alt="Luxury Living Room">
+                </div>
+            </div>
+            <div class="promo-text">
+                <h2>5 Cara Membuat Ruang Tamu Tampak Lebih Mewah dengan Furniture CasaLuxe</h2>
+                <p>Panduan memilih sofa, meja, dan dekorasi yang cocok untuk tampilan elegan.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- signup dan services -->
+    <section id="services" class="signup-section">
+        <h2>Experience CasaLuxe – Try for Free!</h2>
+        <form class="signup-form">
+            <input type="email" placeholder="email" required>
+            <input type="password" placeholder="password" required>
+            <button type="submit" class="signup-btn">Start free trial</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>CASALUXE</h2>
+                <p>Transform Your Home with Elegance & Luxury</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CasaLuxe. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    function toggleFlip(index) {
+        let cards = document.querySelectorAll(".product-card");
+        cards[index].classList.toggle("flipped");
+    }
+    
+    function changeColor(event, index, newImg) {
+        event.stopPropagation(); // Supaya tidak memicu flip saat memilih warna
+        document.getElementById(`img-${index}`).src = newImg;
+    }
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70, // Sesuaikan agar tidak tertutup navbar
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</html>
